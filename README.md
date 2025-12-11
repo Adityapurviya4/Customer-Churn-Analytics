@@ -9,7 +9,7 @@ Customer churn is a critical metric for businesses, especially in the telecommun
 
 The goal is to provide actionable insights that can help in retention strategies by visualizing correlations between customer attributes and churn rates.
 
-1. Project Overview
+## 1. Project Overview
 
 Customer churn is one of the most important business problems across telecom, banking, SaaS, insurance, and e-commerce.
 The goal of this project is to:
@@ -22,8 +22,7 @@ The goal of this project is to:
 
 The workflow covers data ingestion → preprocessing → EDA → feature engineering → modeling → evaluation → deployment.
 
-2. Technologies & Tools Used
-Python (Primary Language)
+## 2. Technologies & Tools Used Python (Primary Language)
 
 Libraries:
 
@@ -53,7 +52,7 @@ Visualization & BI Tools
 
 Tableau / Power BI dashboards for churn monitoring and KPI reporting
 
-3. Dataset Overview
+## 3. Dataset Overview
 
 Typical churn dataset includes:
 
@@ -63,7 +62,7 @@ Account Details	Contract type, Payment type
 Usage Metrics	Data usage, calls, total charges
 Service Features	Internet service, support calls
 Target Variable	Churn = {Yes/No}
-4. Data Preprocessing
+## 4. Data Preprocessing
 4.1 Missing Value Handling
 
 Numerical → mean/median imputation
@@ -98,7 +97,7 @@ StandardScaler for Logistic Regression / Neural networks
 
 Tree-based models (Random Forest, XGBoost) → scaling not necessary
 
-5. Exploratory Data Analysis (EDA)
+## 5. Exploratory Data Analysis (EDA)
 5.1 Univariate Analysis
 
 Distribution of numerical variables
@@ -135,7 +134,7 @@ Heatmap, boxplots, bar charts
 
 Feature importance charts
 
-6. Feature Engineering
+## 6. Feature Engineering
 6.1 Creating New Features
 
 Tenure groups
@@ -164,7 +163,7 @@ Contract type × tenure
 
 Service features × satisfaction score
 
-7. Model Building
+## 7. Model Building
 
 The project uses several supervised ML algorithms:
 
@@ -192,21 +191,8 @@ Best model accuracy
 
 Handles missing values and categorical data efficiently
 
-7.3 Deep Learning (Optional)
 
-Feed-forward neural networks (DNNs)
-
-LSTM for sequential usage data
-
-Autoencoders for anomaly detection
-
-7.4 Unsupervised Learning
-
-K-Means clustering for customer segmentation
-
-Isolation Forest / One-Class SVM for anomaly and unusual behavior detection
-
-8. Model Validation
+## 8. Model Validation
 Metrics Used
 
 Because churn datasets are imbalanced, accuracy is not reliable.
@@ -216,10 +202,6 @@ Use:
 Precision
 
 Recall (most important)
-
-F1-score
-
-ROC-AUC
 
 Confusion Matrix
 
@@ -241,22 +223,7 @@ RandomizedSearch
 
 Bayesian Optimization (Optuna, Hyperopt)
 
-9. Model Deployment (Optional)
-Cloud Deployment
-
-Deploy model using:
-
-AWS SageMaker Endpoint
-
-Azure ML Web Service
-
-GCP AI Platform Model Endpoint
-
-API Development
-
-REST API using Flask/FastAPI
-
-Docker containerization
+## 9. Model Deployment (Optional)
 
 Real-Time Predictions
 
@@ -264,19 +231,13 @@ Incoming customer data from CRM (Salesforce, HubSpot)
 
 Prediction triggers retention workflow
 
-10. Business Insights from Models
+## 10. Business Insights from Models
 
 ✔ Customers with month-to-month contracts are most likely to churn
 ✔ Low tenure customers show highest churn probability
 ✔ High service issues (tickets/calls) strongly correlate with churn
 ✔ Paperless billing + monthly charges is a churn risk factor
-✔ Retention strategies:
 
-Offer discounts for long-term contracts
-
-Improve customer support responsiveness
-
-Target campaigns for high-risk customer segments
 
 ## 🚀 How to Run
 1.  Clone the repository:
